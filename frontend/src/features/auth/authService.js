@@ -15,8 +15,15 @@ const register = async (userData) => {
 }
 
 
+// Logout user
+const logout = () => {
+
+}
+
+
 const authService = {
-    register
+    register,
+    logout
 }
 
 export default authService
