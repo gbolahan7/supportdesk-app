@@ -1,9 +1,13 @@
 const express = require('express')
 const { errorHandler } = require('./middleware/errorMiddleware')
 const colors = require('colors')
+const mongoose = require('mongoose');
 const dotenv = require('dotenv').config()
 const connectDB = require('./config/db')
 const path = require('path')
+
+mongoose.set('strictQuery', false);
+
 
 
 //connect to DB
