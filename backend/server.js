@@ -24,6 +24,7 @@ app.get('/', (req, res) => {
 
 app.use('/api/users', require('./routes/userRoutes'))
 app.use('/api/tickets', require('./routes/ticketRoutes'))
+// app.use('/api/notes', require('./routes/noteRoutes'))
 app.use(errorHandler)
 
 
